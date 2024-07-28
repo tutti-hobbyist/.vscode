@@ -1,0 +1,127 @@
+{
+  // エディタ設定
+  "editor.fontSize": 14, // フォントサイズ
+  "editor.fontFamily": "Consolas, 'Courier New', monospace", // 文字フォント
+  "editor.wordSegmenterLocales": "ja", // 日本語の単語単位で区切り文字を認識
+  "editor.tabSize": 2, // タブのスペース数
+  "editor.insertSpaces": true, // タブキーでスペースを挿入
+  "editor.wordWrap": "on", // 行の折り返し表示
+  "editor.wrappingIndent": "indent", // 折り返し行のインデントを1階層増やす
+  "editor.rulers": [72], // 列に線を表示
+  "editor.mouseWheelZoom": true, // マウスホイールでのズームを有効化
+  "editor.bracketPairColorization.enabled": true, // 括弧の対応を色付け
+  "editor.smoothScrolling": true, // スムーズスクロールを有効化
+  "editor.renderWhitespace": "boundary", // エディター上での空白文字の表示
+  "editor.renderLineHighlight": "all", // 選択行の行番号をハイライト
+  "editor.renderControlCharacters": true, // 制御文字を表示
+  "editor.minimap.enabled": true, // ミニマップの表示
+  "editor.minimap.maxColumn": 30, // ミニマップの最大幅
+  "editor.minimap.showSlider": "always", // ミニマップのスライダーの表示方法
+  "editor.minimap.size": "fit", // ミニマップのサイズ
+  "editor.formatOnSave": true, // 保存時に自動フォーマット
+  "editor.formatOnPaste": true, // 貼り付け時に自動フォーマット
+  "editor.formatOnType": true, // タイプ時に自動フォーマット
+  "editor.autoClosingBrackets": "always", // 自動で括弧を閉じる
+  "editor.autoClosingQuotes": "always", // 自動で引用符を閉じる
+
+  // ファイル設定
+  "files.trimFinalNewlines": true, // 最終行以降の空行を自動で削除
+  "files.trimTrailingWhitespace": true, // 行末の空白を自動で削除
+  "files.insertFinalNewline": true, // ファイルの末尾に改行を挿入
+  "files.eol": "\n", // 改行コードの規定値
+  "files.exclude": {
+    "**/.git": false, // .gitフォルダを表示
+  },
+
+  // エクスプローラ設定
+  "explorer.compactFolders": false, // フォルダの階層をまとめない
+  "explorer.confirmDelete": false, // ファイル削除の確認を無効化
+  "explorer.confirmDragAndDrop": false, // 統合ターミナルのフォントサイズ
+
+  // ターミナル設定
+  "terminal.integrated.copyOnSelection": true, // 選択時に自動的にコピー
+  "terminal.integrated.cursorBlinking": true, // ターミナルのカーソル点滅
+  "terminal.integrated.cursorStyle": "line", // ターミナルのカーソルの形状
+  "terminal.integrated.mouseWheelZoom": true, // ターミナルでCtrlキーを押しながらマウスホイールでのズームを有効
+  "terminal.integrated.smoothScrolling": true, // ターミナルのスクロールを滑らかにする
+  "terminal.integrated.defaultProfile.windows": "PowerShell", // ターミナルのデフォルト設定
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+        "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "icon": "terminal-powershell",
+    },
+    "GitBash": {
+        "path": "C:\\Users\\tohok\\Downloads\\Git\\bin\\bash.exe",
+        "icon" : "terminal-bash",
+    },
+    "Command Prompt": {
+        "path": "C:\\Windows\\System32\\cmd.exe",
+    },
+  },
+
+  // ソース管理
+  "scm.alwaysShowRepositories": true, // サイドバーにリポジトリを常に表示
+  "scm.defaultViewMode": "tree", // 変更ファイル一覧をツリー表示
+  "scm.diffDecorationsGutterWidth": 5, // 差分がある行をよりわかりやすく表示
+  "scm.inputFontSize": 15, // コミットメッセージのフォントサイズ
+
+  // ワークベンチ設定
+  "workbench.startupEditor": "none", // 起動時の作業開始画面を非表示
+  "workbench.colorTheme": "Solarized Dark", // カラーテーマの設定
+  "workbench.iconTheme": "material-icon-theme", // アイコンテーマの設定
+  "workbench.statusBar.visible": true, // ステータスバーの表示
+  "workbench.editor.enablePreview": false, // プレビューモードを無効化
+  "workbench.editor.wrapTabs": true, // タブを折り返す
+  "workbench.editor.tabSizing": "shrink", // 複数タブを開いている場合にタブを縮小表示
+  "workbench.editor.closeOnFileDelete": true, // 外部要因でファイルが削除されたときにエディターを閉じる
+  "workbench.view.alwaysShowHeaderActions": true, // サイドバーのヘッダーアクションを常に表示
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#00f2ff",
+    "terminalCursor.foreground": "#00f2ff"
+  },
+
+  // セキュリティ設定
+  "security.workspace.trust.startupPrompt": "never", // 起動時に信頼プロンプトを表示
+  "security.workspace.trust.untrustedFiles": "open", // ワークスペースの信頼を有効化
+
+  // ファイル検索設定
+  "search.showLineNumbers": true, // 検索ビューに行数を併記
+  "search.exclude": {
+  },
+
+  // Git設定
+  "git.enableSmartCommit": true, // 変更がステージされていない場合もコミット
+  "git.confirmSync": false, // 同期の確認を無効化
+  "git.autofetch": true, // リモートの変更を自動でフェッチ
+  "git.pruneOnFetch": true, // fetch時にリモートで削除されたブランチをローカルでも削除
+
+  // 拡張機能設定
+  "extensions.ignoreRecommendations": false, // 拡張機能の推奨を無視しない
+  "extensions.autoUpdate": true, // 拡張機能の自動更新を有効化
+
+  // デバッグ設定
+  "debug.inlineValues": "on", // インラインで変数の値を表示
+  "debug.openDebug": "openOnSessionStart", // デバッグセッション開始時にデバッグビューを開く
+  "debug.internalConsoleOptions": "openOnSessionStart", // デバッグセッション開始時にデバッグコンソールを開く
+  "debug.console.fontSize": 14, // デバッグコンソールのフォントサイズ
+
+  // その他
+  "breadcrumbs.enabled": true, // パンくずリストの表示
+
+  // 言語固有の設定
+  "[python]": {
+    "editor.formatOnType": true, // 保存時に自動フォーマット
+    "editor.tabSize": 4, // 1タブで半角スペース4つ
+  },
+  "[java]": {
+    "editor.formatOnSave": true, // 保存時に自動フォーマット
+    "editor.tabSize": 4, // 1タブで半角スペース4つ
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true, // 保存時に自動フォーマット
+  },
+  "[json]": {
+    "editor.formatOnSave": true, // 保存時に自動フォーマット
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+}
