@@ -32,7 +32,7 @@
   "files.insertFinalNewline": true, // ファイルの末尾に改行を挿入
   "files.eol": "\n", // 改行コードの規定値
   "files.exclude": {
-    "**/.git": false, // .gitフォルダを表示
+    "**/.git": false // .gitフォルダを表示
   },
 
   // エクスプローラ設定
@@ -51,16 +51,16 @@
   "terminal.integrated.defaultProfile.windows": "PowerShell", // ターミナルのデフォルト設定
   "terminal.integrated.profiles.windows": {
     "PowerShell": {
-        "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-        "icon": "terminal-powershell",
+      "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "icon": "terminal-powershell"
     },
     "GitBash": {
-        "path": "C:\\Users\\tohok\\Downloads\\Git\\bin\\bash.exe",
-        "icon" : "terminal-bash",
+      "path": "C:\\Users\\tohok\\Downloads\\Git\\bin\\bash.exe",
+      "icon": "terminal-bash"
     },
     "Command Prompt": {
-        "path": "C:\\Windows\\System32\\cmd.exe",
-    },
+      "path": "C:\\Windows\\System32\\cmd.exe"
+    }
   },
 
   // ソース管理
@@ -70,8 +70,7 @@
   "scm.inputFontSize": 15, // コミットメッセージのフォントサイズ
 
   // ワークベンチ設定
-  "workbench.startupEditor": "none", // 起動時の作業開始画面を非表示
-  "workbench.colorTheme": "Solarized Dark", // カラーテーマの設定
+  "workbench.startupEditor": "none", // カラーテーマの設定
   "workbench.iconTheme": "material-icon-theme", // アイコンテーマの設定
   "workbench.statusBar.visible": true, // ステータスバーの表示
   "workbench.editor.enablePreview": false, // プレビューモードを無効化
@@ -79,19 +78,25 @@
   "workbench.editor.tabSizing": "shrink", // 複数タブを開いている場合にタブを縮小表示
   "workbench.editor.closeOnFileDelete": true, // 外部要因でファイルが削除されたときにエディターを閉じる
   "workbench.view.alwaysShowHeaderActions": true, // サイドバーのヘッダーアクションを常に表示
-  "workbench.colorCustomizations": { // カラーテーマに上書きする個別の設定
-    "editorCursor.foreground": "#00f2ff", // エディタのカーソル色
-    "terminalCursor.foreground": "#00f2ff", // ターミナルのカーソル色
-    "sideBar.background": "#000000", // サイドバーの背景色
-    "sideBar.foreground": "#ffffff", // サイドバーの前景色
-    "activityBar.background": "#000000", // アクティビティバーの背景色
-    "activityBar.foreground": "#ffffff", // アクティビティバーの前景色
-    "editor.selectionBackground": "#ffffffe2", // 選択領域の強調色
-    "editorLineNumber.activeForeground": "#ffffff", // 選択された行の行番号の表示色
-    "scrollbarSlider.background": "#0077ff99", // スクロールバーの色
-    "tab.activeBorder": "#ffffff", // アクティブタブの下線
-    "editorBracketMatch.background": "#00f2ffd5",// 対応する括弧の背景色
-    "editorSuggestWidget.selectedBackground": "#0044ff", // サジェスト欄で選択中の項目の背景色
+  "workbench.colorCustomizations": {
+    "editor.findMatchBorder": "#16e669",
+    "editorCursor.foreground": "#00f2ff",
+    "terminalCursor.foreground": "#00f2ff",
+    "sideBar.background": "#000000",
+    "sideBar.foreground": "#ffffff",
+    "activityBar.background": "#000000",
+    "activityBar.foreground": "#ffffff",
+    "editor.selectionBackground": "#ffffffe2",
+    "editorLineNumber.activeForeground": "#ffffff",
+    "scrollbarSlider.background": "#0077ff99",
+    "editorBracketMatch.background": "#00f2ffd5",
+    "editorSuggestWidget.selectedBackground": "#0044ff",
+    "titleBar.activeForeground": "#ffffff",
+    "statusBar.background": "#0000ff",
+    "statusBar.foreground": "#ffffff",
+    "tab.activeBackground": "#ffc0cb",
+    "tab.activeForeground": "#000000",
+    "tab.inactiveForeground": "#ffffff"
   },
 
   // セキュリティ設定
@@ -100,8 +105,7 @@
 
   // ファイル検索設定
   "search.showLineNumbers": true, // 検索ビューに行数を併記
-  "search.exclude": {
-  },
+  "search.exclude": {},
 
   // Git設定
   "git.enableSmartCommit": true, // 変更がステージされていない場合もコミット
@@ -122,7 +126,8 @@
 
   // その他
   "breadcrumbs.enabled": true, // パンくずリストの表示
-  "change-case.default": [ // 拡張機能 (change-case)
+  "change-case.default": [
+    // 拡張機能 (change-case)
     "param-case",
     "camelcase",
     "pascalCase",
@@ -136,17 +141,22 @@
   },
   "[python]": {
     "editor.formatOnType": true, // 保存時に自動フォーマット
-    "editor.tabSize": 4, // 1タブで半角スペース4つ
+    "editor.tabSize": 4 // 1タブで半角スペース4つ
   },
   "[java]": {
     "editor.formatOnSave": true, // 保存時に自動フォーマット
-    "editor.tabSize": 4, // 1タブで半角スペース4つ
+    "editor.tabSize": 4 // 1タブで半角スペース4つ
   },
   "[javascript]": {
-    "editor.formatOnSave": true, // 保存時に自動フォーマット
+    "editor.formatOnSave": true // 保存時に自動フォーマット
   },
   "[json]": {
-    "editor.formatOnSave": true, // 保存時に自動フォーマット
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.formatOnSave": false // 保存時に自動フォーマット
   },
+  "terminal.integrated.fontSize": 15,
+  "workbench.colorTheme": "Solarized Dark",
+  "workbench.preferredDarkColorTheme": "Solarized Dark",
+  "workbench.preferredHighContrastColorTheme": "Solarized Dark",
+  "workbench.preferredHighContrastLightColorTheme": "Solarized Dark",
+  "workbench.preferredLightColorTheme": "Solarized Dark"
 }

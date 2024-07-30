@@ -99,5 +99,5 @@
     {
         "key": "ctrl+2",
         "command": "-workbench.action.focusSecondEditorGroup"
-    },
+    }
 ]
