@@ -44,6 +44,7 @@
   "terminal.integrated.copyOnSelection": true, // 選択時に自動的にコピー
   "terminal.integrated.cursorBlinking": true, // ターミナルのカーソル点滅
   "terminal.integrated.cursorStyle": "line", // ターミナルのカーソルの形状
+  "terminal.integrated.cursorWidth": 3, // ターミナルのカーソル幅
   "terminal.integrated.scrollback": 100000, // ターミナルで遡ることが可能な行数
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe", // WSLのパス
   "terminal.integrated.mouseWheelZoom": true, // ターミナルでCtrlキーを押しながらマウスホイールでのズームを有効
@@ -94,8 +95,8 @@
     "titleBar.activeForeground": "#ffffff",
     "statusBar.background": "#0000ff",
     "statusBar.foreground": "#ffffff",
-    "tab.activeBackground": "#ffc0cb",
-    "tab.activeForeground": "#000000",
+    "tab.activeBorder": "#ffffff",
+    "tab.activeBackground": "#0000b5",
     "tab.inactiveForeground": "#ffffff"
   },
 
@@ -151,7 +152,7 @@
     "editor.formatOnSave": true // 保存時に自動フォーマット
   },
   "[json]": {
-    "editor.formatOnSave": false // 保存時に自動フォーマット
+    "editor.formatOnSave": false, // 保存時に自動フォーマット
   },
   "terminal.integrated.fontSize": 15,
   "workbench.colorTheme": "Solarized Dark",
