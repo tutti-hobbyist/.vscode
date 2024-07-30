@@ -8,6 +8,8 @@
   "editor.wordWrap": "on", // 行の折り返し表示
   "editor.wrappingIndent": "indent", // 折り返し行のインデントを1階層増やす
   "editor.rulers": [72], // 列に線を表示
+  "editor.links": true, // リンクをクリック可能に
+  "editor.cursorWidth": 3, // カーソル幅
   "editor.mouseWheelZoom": true, // マウスホイールでのズームを有効化
   "editor.bracketPairColorization.enabled": true, // 括弧の対応を色付け
   "editor.smoothScrolling": true, // スムーズスクロールを有効化
@@ -42,6 +44,8 @@
   "terminal.integrated.copyOnSelection": true, // 選択時に自動的にコピー
   "terminal.integrated.cursorBlinking": true, // ターミナルのカーソル点滅
   "terminal.integrated.cursorStyle": "line", // ターミナルのカーソルの形状
+  "terminal.integrated.scrollback": 100000, // ターミナルで遡ることが可能な行数
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe", // WSLのパス
   "terminal.integrated.mouseWheelZoom": true, // ターミナルでCtrlキーを押しながらマウスホイールでのズームを有効
   "terminal.integrated.smoothScrolling": true, // ターミナルのスクロールを滑らかにする
   "terminal.integrated.defaultProfile.windows": "PowerShell", // ターミナルのデフォルト設定
@@ -75,9 +79,19 @@
   "workbench.editor.tabSizing": "shrink", // 複数タブを開いている場合にタブを縮小表示
   "workbench.editor.closeOnFileDelete": true, // 外部要因でファイルが削除されたときにエディターを閉じる
   "workbench.view.alwaysShowHeaderActions": true, // サイドバーのヘッダーアクションを常に表示
-  "workbench.colorCustomizations": {
-    "editorCursor.foreground": "#00f2ff",
-    "terminalCursor.foreground": "#00f2ff"
+  "workbench.colorCustomizations": { // カラーテーマに上書きする個別の設定
+    "editorCursor.foreground": "#00f2ff", // エディタのカーソル色
+    "terminalCursor.foreground": "#00f2ff", // ターミナルのカーソル色
+    "sideBar.background": "#000000", // サイドバーの背景色
+    "sideBar.foreground": "#ffffff", // サイドバーの前景色
+    "activityBar.background": "#000000", // アクティビティバーの背景色
+    "activityBar.foreground": "#ffffff", // アクティビティバーの前景色
+    "editor.selectionBackground": "#ffffffe2", // 選択領域の強調色
+    "editorLineNumber.activeForeground": "#ffffff", // 選択された行の行番号の表示色
+    "scrollbarSlider.background": "#0077ff99", // スクロールバーの色
+    "tab.activeBorder": "#ffffff", // アクティブタブの下線
+    "editorBracketMatch.background": "#00f2ffd5",// 対応する括弧の背景色
+    "editorSuggestWidget.selectedBackground": "#0044ff", // サジェスト欄で選択中の項目の背景色
   },
 
   // セキュリティ設定
@@ -104,11 +118,22 @@
   "debug.openDebug": "openOnSessionStart", // デバッグセッション開始時にデバッグビューを開く
   "debug.internalConsoleOptions": "openOnSessionStart", // デバッグセッション開始時にデバッグコンソールを開く
   "debug.console.fontSize": 14, // デバッグコンソールのフォントサイズ
+  "debug.toolBarLocation": "docked", // デバッグツールバーをデバッグウィンドウに埋め込む
 
   // その他
   "breadcrumbs.enabled": true, // パンくずリストの表示
+  "change-case.default": [ // 拡張機能 (change-case)
+    "param-case",
+    "camelcase",
+    "pascalCase",
+    "snake_case",
+    "CONST_CASE"
+  ],
 
   // 言語固有の設定
+  "[markdown]": {
+    "editor.formatOnSave": false // 保存時に自動フォーマットしない
+  },
   "[python]": {
     "editor.formatOnType": true, // 保存時に自動フォーマット
     "editor.tabSize": 4, // 1タブで半角スペース4つ
