@@ -1,6 +1,6 @@
 {
   // エディタ設定
-  "editor.fontSize": 14, // フォントサイズ
+  "editor.fontSize": 16, // フォントサイズ
   "editor.fontFamily": "Consolas, 'Courier New', monospace", // 文字フォント
   "editor.wordSegmenterLocales": "ja", // 日本語の単語単位で区切り文字を認識
   "editor.tabSize": 2, // タブのスペース数
@@ -126,6 +126,7 @@
   "debug.toolBarLocation": "docked", // デバッグツールバーをデバッグウィンドウに埋め込む
 
   // その他
+  "window.zoomLevel": 1.4,
   "breadcrumbs.enabled": true, // パンくずリストの表示
   "change-case.default": [
     // 拡張機能 (change-case)
@@ -154,7 +155,7 @@
   "[json]": {
     "editor.formatOnSave": false, // 保存時に自動フォーマット
   },
-  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontSize": 16,
   "workbench.colorTheme": "Solarized Dark",
   "workbench.preferredDarkColorTheme": "Solarized Dark",
   "workbench.preferredHighContrastColorTheme": "Solarized Dark",
