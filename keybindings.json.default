@@ -100,4 +100,9 @@
         "key": "ctrl+2",
         "command": "-workbench.action.focusSecondEditorGroup"
     }
+    // Select All Matchesのショートカットとの重複回避
+    {
+        "key": "ctrl+shift+l",
+        "command": "-aichat.insertselectionintochat"
+    },
 ]
